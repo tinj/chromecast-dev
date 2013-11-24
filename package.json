@@ -1,0 +1,26 @@
+{
+  "name": "chromecast-dev",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tinj/chromecast-dev"
+  },
+  "keywords": [
+    "node",
+    "chromecast"
+  ],
+  "engines": {
+    "node": ">= 0.10.x",
+    "npm": "1.2.x"
+  },
+  "dependencies": {
+    "connect": ">= 1.8.x",
+    "express": "3.x",
+    "jade": "~0.26.3",
+    "underscore": ">=1.3.1",
+    "underscore.string": ">=2.3.3",
+    "mocha": ">= 1.6.0",
+    "should": ">= 0.6.3"
+  },
+  "license": "MIT"
+}
