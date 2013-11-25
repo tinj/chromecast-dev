@@ -29,12 +29,12 @@ if (window.cast && window.cast.isAvailable) {
       initializeCastApi();
     }
   });
-};
+}
 
-initializeCastApi = function() {
+function initializeCastApi () {
   castApi = new cast.Api();
   castApi.addReceiverListener(applicationID, onReceiverList);
-};
+}
 
 function onReceiverList(list) {
   console.log("receiver list" + list);
@@ -84,7 +84,7 @@ function castMedia(i) {
 }
 
 function updateUI(status) {
-  if( status.success == true ) {
+  if( status.success === true ) {
     var media_control = document.getElementById('media_control');
     media_control.style.display = 'block';
 
