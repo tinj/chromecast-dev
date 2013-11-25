@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-var applicationID = 'YOUR_APP_ID';
+var applicationID = '46e4e372-8bfa-49cf-9293-12651e04c845_2';
 var castApi;
 var currentActivityId = null;
 var currentReceiver;
