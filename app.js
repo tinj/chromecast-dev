@@ -41,7 +41,6 @@ app.configure(function () {
 
 // app.get('/', routes.site.index);
 app.get('/', routes.index);
-app.get('/cc-demo.js', routes.demo);
 app.get('/rcvr/myreceiver.html', routes.receiver);
 // app.get('/chrome', express.static(__dirname + '/views/chrome'));
 
