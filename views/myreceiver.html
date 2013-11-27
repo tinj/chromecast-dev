@@ -26,18 +26,18 @@ window.addEventListener('load', function() {
     var st = remoteMedia.getStatus()['state'];
 
     if( st == 0 || remoteMedia.getStatus()['current_time'] == 0 ) {
-        status.style.display = 'block';
+      status.style.display = 'block';
     }
     else {
-        if( st == 1 && remoteMedia.getStatus()['current_time'] > 0 ) {
-            status.innerHTML = 'Paused...';
-            status.style.display = 'block';
-        }
-        else {
-            status.innerHTML = remoteMedia.getStatus()['current_time'];
-            status.style.display = 'none';
-            elem.style.display = 'block';
-        }
+      if( st == 1 && remoteMedia.getStatus()['current_time'] > 0 ) {
+        status.innerHTML = 'Paused...';
+        status.style.display = 'block';
+      }
+      else {
+        status.innerHTML = remoteMedia.getStatus()['current_time'];
+        status.style.display = 'none';
+        elem.style.display = 'block';
+      }
     }
   }
   setInterval(checkStatus, 1000);
