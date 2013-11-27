@@ -37,7 +37,8 @@ function initializeCastApi () {
 }
 
 function onReceiverList(list) {
-  console.log("receiver list" + list);
+  console.log("receiver list: %s", JSON.stringify(list));
+  window.theList = list;
   var receiverDiv = document.getElementById('receivers');
   var temp = '';
 
